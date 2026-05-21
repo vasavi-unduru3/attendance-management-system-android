@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Background Image -->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/backgound"
+        android:alpha="0.25"
+        android:contentDescription="Background" />
+
+    <!-- Main Content -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="24dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@android:color/white"
+            android:layout_centerInParent="true"
+            android:padding="24dp"
+            android:gravity="center_horizontal"
+            android:elevation="8dp"
+            android:alpha="0.95">
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:orientation="vertical"-->
+<!--        android:padding="24dp"-->
+<!--        android:gravity="center"-->
+<!--        android:background="#CCFFFFFF">-->
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="Assign Sections"
+            android:textColor="@color/manageteacheratu"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="14dp" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:padding="24dp"
+
+            android:alpha="0.95"
+            android:elevation="8dp">
+
+            <ImageView
+
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginBottom="1dp"
+                android:contentDescription="App Logo"
+                android:scaleType="fitCenter"
+                android:src="@drawable/students"/>
+
+        <EditText
+            android:id="@+id/sectionInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Section (comma separated)"
+            android:padding="12dp"
+            android:layout_marginLeft="5dp"
+            android:backgroundTint="@color/manageteacheratu"
+            android:textColor="@android:color/black"
+            android:textColorHint="#888888"
+            android:inputType="text" />
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/assignSectionBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Assign Section"
+            android:backgroundTint="@color/manageteacheratu"
+            android:textColor="@android:color/white"
+            android:padding="12dp"
+           />
+<!--            android:layout_marginBottom="16dp"-->
+
+        <TextView
+            android:id="@+id/assignedSections"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Assigned Sections:"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:layout_marginTop="8dp" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

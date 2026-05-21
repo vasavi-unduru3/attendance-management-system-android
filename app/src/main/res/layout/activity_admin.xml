@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <!-- Optional background image -->
+    <ImageView
+        android:id="@+id/bgImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/backgound"
+        android:scaleType="centerCrop"
+        android:alpha="0.2"
+        android:contentDescription="Background Image" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:background="@android:color/white"
+        android:alpha="0.95"
+        android:elevation="6dp"
+        android:layout_margin="32dp">
+
+        <!-- Optional Title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Admin Panel"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginBottom="14dp" />
+
+        <!-- Manage Teachers -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="24dp"
+        android:alpha="0.95"
+        android:elevation="8dp">
+
+        <!-- Logo -->
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginBottom="1dp"
+            android:contentDescription="App Logo"
+            android:scaleType="fitCenter"
+            android:src="@drawable/school"/>
+        <Button
+            android:id="@+id/manageTeachersBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Manage Teachers"
+            android:layout_marginLeft="5dp"
+            android:padding="12dp"
+            android:textColor="@android:color/white"
+            android:backgroundTint="@color/colorPrimary"
+          />
+
+    </LinearLayout>
+
+        <!-- Manage Students -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="24dp"
+        android:alpha="0.95"
+        android:elevation="8dp">
+
+        <!-- Logo -->
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginBottom="1dp"
+            android:contentDescription="App Logo"
+            android:scaleType="fitCenter"
+            android:src="@drawable/study"/>
+        <Button
+            android:id="@+id/manageStudentsBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Manage Students"
+            android:layout_marginLeft="2dp"
+            android:padding="12dp"
+            android:textColor="@android:color/white"
+            android:backgroundTint="@color/colorPrimaryDark" />
+    </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

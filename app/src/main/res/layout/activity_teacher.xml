@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Background Image -->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/backgound"
+        android:scaleType="centerCrop"
+        android:alpha="0.2"
+        android:contentDescription="Background" />
+
+    <!-- Main Content -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:gravity="center">
+
+        <!-- Date Input -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Date:"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:gravity="start"
+            android:padding="4dp"/>
+
+        <EditText
+            android:id="@+id/dateEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Date"
+            android:textSize="15dp"
+            android:background="@android:color/white"
+            android:padding="8dp"/>
+
+        <!-- Day Input -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Day:"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:gravity="start"
+            android:padding="4dp"/>
+
+        <EditText
+            android:id="@+id/dayEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Day"
+            android:textSize="15dp"
+            android:background="@android:color/white"
+            android:padding="8dp"/>
+
+        <!-- Section Spinner -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:padding="24dp">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:contentDescription="App Logo"
+                android:scaleType="fitCenter"
+                android:src="@drawable/students"/>
+
+            <Spinner
+                android:id="@+id/sectionSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/colorAccent"
+                android:padding="8dp"/>
+        </LinearLayout>
+
+        <!-- Load Button -->
+        <Button
+            android:id="@+id/loadStudentsBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Load Students"
+            android:backgroundTint="@color/manageteacheratu"
+            android:textColor="@android:color/white"/>
+
+        <!-- List of Students -->
+        <ListView
+            android:id="@+id/studentListView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:divider="#000000"
+            android:dividerHeight="0.5dp"/>
+
+        <!-- Submit Attendance Button -->
+        <Button
+            android:id="@+id/submitAttendanceBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Submit Attendance"
+            android:backgroundTint="@color/manageteacheratu"
+            android:textColor="@android:color/white"/>
+    </LinearLayout>
+</RelativeLayout>

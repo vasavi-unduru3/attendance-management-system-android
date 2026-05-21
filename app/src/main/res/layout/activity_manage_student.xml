@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Background Image -->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/backgound"
+        android:alpha="0.25"
+        android:contentDescription="Background" />
+
+    <!-- ScrollView for safe scrolling in small devices -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="24dp">
+
+            <!-- Centered Container -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@android:color/white"
+                android:layout_centerInParent="true"
+                android:padding="24dp"
+                android:gravity="center_horizontal"
+                android:elevation="8dp"
+                android:alpha="0.95">
+
+                <!-- Title -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="14dp"
+                    android:text="Manage Student"
+                    android:textColor="@color/manageteacheratu"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <!-- Username -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:padding="24dp"
+
+                android:alpha="0.95"
+                android:elevation="8dp">
+
+                <!-- Logo -->
+                <ImageView
+                    android:id="@+id/logoImage"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="0dp"
+
+                    android:contentDescription="App Logo"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/account" />
+                <EditText
+                    android:id="@+id/usernameInput"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Username"
+                    android:padding="12dp"
+                    android:layout_marginLeft="5dp"
+                    android:backgroundTint="@color/manageteacheratu"
+                    android:textColor="@android:color/black"
+                    android:textColorHint="#888888"
+                    />
+            </LinearLayout>
+
+                <!-- Password -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:padding="24dp"
+
+                android:alpha="0.95"
+                android:elevation="8dp">
+
+                <ImageView
+
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginBottom="1dp"
+                    android:contentDescription="App Logo"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/lock"/>
+                <EditText
+                    android:id="@+id/passwordInput"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    android:padding="12dp"
+                    android:backgroundTint="@color/manageteacheratu"
+                    android:textColor="@android:color/black"
+                    android:textColorHint="#888888"
+                    android:layout_marginLeft="5dp"
+                     />
+
+            </LinearLayout>
+                <!-- Section -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:padding="24dp"
+
+                android:alpha="0.95"
+                android:elevation="8dp">
+
+                <ImageView
+
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginBottom="1dp"
+                    android:contentDescription="App Logo"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/students"/>
+                <EditText
+                    android:id="@+id/section"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Section"
+                    android:layout_marginLeft="5dp"
+                    android:padding="12dp"
+                    android:backgroundTint="@color/manageteacheratu"
+                    android:textColor="@android:color/black"
+                    android:textColorHint="#888888"
+                    />
+            </LinearLayout>
+
+                <!-- Save Button -->
+                <Button
+                    android:id="@+id/saveBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/manageteacheratu"
+                    android:padding="12dp"
+                    android:text="Save"
+                    android:textColor="@android:color/white" />
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
